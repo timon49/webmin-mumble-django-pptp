@@ -16,6 +16,12 @@ systemctl enable pptpd.service
 iptables -A INPUT -p tcp --dport 1723 -j ACCEPT 
 iptables-save 
 
+apt-get install php5 -y
+apt-get update
+apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-mysql php5-pgsql php5-curl php5-gd php5-imagick php5-intl php5-mcrypt
+
+
+
 apt-get install mumble-server mumble-django -y 
 cd /etc 
 rm mumble-server.ini 
