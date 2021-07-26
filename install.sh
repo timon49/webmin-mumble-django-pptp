@@ -14,7 +14,16 @@ chmod 600 /etc/ppp/chap-secrets &&a chown root:root /etc/ppp/chap-secrets
 /etc/init.d/pptpd restart 
 systemctl enable pptpd.service 
 iptables -A INPUT -p tcp --dport 1723 -j ACCEPT 
+iptables -A FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT 
+iptables -A FORWARD -s 10.0.0.0/24 -i ppp+ -j ACCEPT
 iptables-save  
+
+cd /etc 
+rm  sysctl.conf
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/sysctl.conf
+sysctl -p 
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE 
+iptables-save 
 
 apt-get install php5 -y 
 apt-get update 
