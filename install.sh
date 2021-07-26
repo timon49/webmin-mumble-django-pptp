@@ -19,8 +19,15 @@ iptables-save
 apt-get install php5 -y 
 apt-get update 
 apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-mysql php5-pgsql php5-curl php5-gd php5-imagick php5-intl php5-mcrypt -y 
+apt-get install apache2 -y 
 
+cd /etc/apache2
+rm apache2.conf
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/apache2.conf
 
+cd /etc/php/5.6/apache2
+rm php.ini
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/php.ini
 
 apt-get install mumble-server mumble-django -y 
 cd /etc 
@@ -34,6 +41,13 @@ cd /etc/mumble-django
 rm settings.py 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/settings.py 
 sudo service apache2 restart 
+
+apt-get install phpmyadmin -y 
+
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
+a2enconf phpmyadmin
+service apache2 reload
+
 
 
 
