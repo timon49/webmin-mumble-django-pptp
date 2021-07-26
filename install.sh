@@ -14,11 +14,11 @@ chmod 600 /etc/ppp/chap-secrets &&a chown root:root /etc/ppp/chap-secrets
 /etc/init.d/pptpd restart 
 systemctl enable pptpd.service 
 iptables -A INPUT -p tcp --dport 1723 -j ACCEPT 
-iptables-save 
+iptables-save  
 
-apt-get install php5 -y
-apt-get update
-apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-mysql php5-pgsql php5-curl php5-gd php5-imagick php5-intl php5-mcrypt
+apt-get install php5 -y 
+apt-get update 
+apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-mysql php5-pgsql php5-curl php5-gd php5-imagick php5-intl php5-mcrypt 
 
 
 
