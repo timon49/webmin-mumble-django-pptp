@@ -57,6 +57,9 @@ ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
 a2enconf phpmyadmin
 service apache2 reload
 
+sudo apt-get remove --purge mysql* -y 
+apt-get install libaio1 libdbd-mysql-perl libhtml-template-perl libmysqlclient18 mysql-client mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 mysql-server-core-5.5 -y 
+
 
 
 
