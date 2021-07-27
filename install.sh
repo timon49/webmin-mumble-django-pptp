@@ -1,5 +1,17 @@
 apt-get update -y 
 apt-get upgrade -y 
+
+sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 
+ls -lh /swapfile 
+sudo chmod 600 /swapfile 
+ls -lh /swapfile 
+sudo mkswap /swapfile 
+sudo swapon /swapfile 
+sudo swapon --show 
+sudo cp /etc/fstab /etc/fstab.bak 
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab 
+apt-get install htop -y
+
 apt-get install pptpd -y 
 cd /etc 
 rm  pptpd.conf 
