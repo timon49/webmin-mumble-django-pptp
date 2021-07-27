@@ -34,9 +34,11 @@ cd /etc/apache2
 rm apache2.conf
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/apache2.conf
 
-cd /etc/php/5.6/apache2
+cd /etc/php5/apache2
 rm php.ini
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/php.ini
+sudo service apache2 restart 
+
 
 apt-get install mumble-server mumble-django -y 
 cd /etc 
