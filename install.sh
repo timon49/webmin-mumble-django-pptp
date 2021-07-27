@@ -1,5 +1,6 @@
 apt-get update -y 
 apt-get upgrade -y 
+apt-get install sudo -y 
 
 sudo dd if=/dev/zero of=/swapfile bs=1M count=1024 
 ls -lh /swapfile 
