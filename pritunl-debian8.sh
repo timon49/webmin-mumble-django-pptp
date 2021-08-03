@@ -20,8 +20,8 @@ sudo apt-get --assume-yes install pritunl mongodb
 sudo systemctl start mongodb pritunl 
 sudo systemctl enable mongodb pritunl 
 sudo apt-get purge --remove pritunl mongodb -y 
-sudo apt -f install 
-sudo apt autoremove 
+sudo apt -f install -y 
+sudo apt-get autoremove 
 sudo apt-get purge pritunl mongodb -y 
 
 apt-get update 
