@@ -11,7 +11,6 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A 
 apt-get update -y 
 sudo apt-get --assume-yes install gnupg 
-apt install mc nano git curl gnupg -y 
 apt-get install mongodb-org -y 
 
 wget https://github.com/pritunl/pritunl/releases/download/1.29.2208.39/pritunl_1.29.2208.39-0debian1.jessie_amd64.deb 
