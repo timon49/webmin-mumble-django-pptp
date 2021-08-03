@@ -4,7 +4,7 @@ apt-get upgrade -y
 sudo apt-get --assume-yes install apt-transport-https 
 apt install mc nano git curl gnupg -y 
 
-rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb -y 
+rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb 
 apt-get update -y 
 echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/4.0 main" > /etc/apt/sources.list.d/mongodb-org-4.0.list 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 
