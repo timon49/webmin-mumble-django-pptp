@@ -7,6 +7,5 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586
 apt-get update
 
 
-wget https://github.com/pritunl/pritunl/releases/download/1.29.2208.39/pritunl_1.29.2208.39-0debian1.jessie_amd64.deb
 dpkg --install pritunl_1.29.2208.39-0debian1.jessie_amd64.deb 
 
