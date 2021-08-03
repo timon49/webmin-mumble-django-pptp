@@ -1,4 +1,6 @@
 apt-get update
+apt-get upgrade -y
+
 sudo apt-get --assume-yes install apt-transport-https 
 apt install mc nano git curl gnupg -y
 echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/4.0 main" > /etc/apt/sources.list.d/mongodb-org-4.0.list
