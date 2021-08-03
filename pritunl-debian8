@@ -1,0 +1,2 @@
+wget https://github.com/pritunl/pritunl/releases/download/1.29.2664.67/pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
+sudo dpkg --install pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
