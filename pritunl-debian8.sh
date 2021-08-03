@@ -21,10 +21,10 @@ sudo systemctl start mongodb pritunl
 sudo systemctl enable mongodb pritunl 
 sudo apt-get purge --remove pritunl mongodb -y 
 sudo apt -f install -y 
-sudo apt-get autoremove 
+sudo apt-get autoremove -y 
 sudo apt-get purge pritunl mongodb -y 
 
-apt-get update 
+apt-get update -y 
 
 
 wget https://github.com/pritunl/pritunl/releases/download/1.29.2208.39/pritunl_1.29.2208.39-0debian1.jessie_amd64.deb
