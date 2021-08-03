@@ -24,6 +24,9 @@ sudo apt -f install -y
 sudo apt-get autoremove -y 
 sudo apt-get purge pritunl mongodb -y 
 
+sudo apt -f install -y 
+
+
 apt-get update -y 
 
 
