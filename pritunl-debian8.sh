@@ -1,5 +1,6 @@
 apt-get update 
 apt-get upgrade -y 
+apt-get install sudo -y 
 
 sudo apt-get --assume-yes install apt-transport-https 
 apt install mc htop nano git curl gnupg -y 
