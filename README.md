@@ -1,5 +1,5 @@
-############################################
-############################################
+====================================
+====================================
 # webmin-mumble-django-pritunl на Debian8
 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django-pritunl.sh && bash ./webmin-mumble-django-pritunl.sh
@@ -23,8 +23,8 @@ pritunl default-password
 pritunl set app.redirect_server false 
 -----------------------------
 
-############################################
-############################################
+====================================
+====================================
 
 # pritunl на Debian8 в 2021г
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pritunl-debian8.sh && bash ./pritunl-debian8.sh
@@ -38,8 +38,8 @@ pritunl default-password
 Эта команда отключит прослушивание и редирект у pritunl(вводить после входа и настройки)
 pritunl set app.redirect_server false 
 -----------------------------
-############################################
-############################################
+====================================
+====================================
 # webmin-mumble-django-pptp на Debian8 (PPTP не советую , лучше pritunl)
 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/install.sh && bash ./install.sh 
