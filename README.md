@@ -2,7 +2,7 @@
 ====================================
 # webmin-mumble-django-pritunl на Debian8
 
-wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django-pritunl.sh && bash ./webmin-mumble-django-pritunl.sh
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django.sh && bash ./webmin-mumble-django.sh
 
 при установке
 ice пароль 123456 (icesecretwrite)
@@ -14,19 +14,7 @@ https://IPADRESS:10000/
 mumble-django channel viewer
 http://IPADRESS/mumble-django/mumble/1
 -----------------------------
-Pritunl VPN
-https://IPADRESS/
 
-ключ
-pritunl setup-key
-
-логин и пароль
-pritunl default-password
-
-Эта команда отключит прослушивание и редирект у pritunl(вводить после входа,настройки и изменнения порта по умолчанию)
-
-pritunl set app.redirect_server false 
------------------------------
 
 ====================================
 ====================================
