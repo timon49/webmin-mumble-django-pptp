@@ -19,6 +19,9 @@ sudo dpkg -i --force-all pritunl_1.29.1990.10-0debian1.jessie_amd64.deb
 systemctl start mongod pritunl 
 systemctl enable mongod pritunl 
 apt-get -f install -y
+sudo dpkg -i --force-all pritunl_1.29.1990.10-0debian1.jessie_amd64.deb
+systemctl start mongod pritunl 
+systemctl enable mongod pritunl 
 
 
 
