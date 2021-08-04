@@ -3,7 +3,7 @@
 # webmin-mumble-django-pritunl на Debian8
 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django-pritunl.sh && bash ./webmin-mumble-django-pritunl.sh
------------------------------
+
 при установке
 ice пароль 123456 (icesecretwrite)
 -----------------------------
