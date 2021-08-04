@@ -6,6 +6,7 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/ti
 
 при установке
 ice пароль 123456 (icesecretwrite)
+
 -----------------------------
 webmin
 https://IPADRESS:10000/
@@ -15,11 +16,15 @@ http://IPADRESS/mumble-django/mumble/1
 -----------------------------
 Pritunl VPN
 https://IPADRESS/
+
 ключ
 pritunl setup-key
+
 логин и пароль
 pritunl default-password
+
 Эта команда отключит прослушивание и редирект у pritunl(вводить после входа,настройки и изменнения порта по умолчанию)
+
 pritunl set app.redirect_server false 
 -----------------------------
 
@@ -34,11 +39,13 @@ https://IPADRESS/
 
 ключ
 pritunl setup-key
+
 логин и пароль
 pritunl default-password
+
 Эта команда отключит прослушивание и редирект у pritunl(вводить после входа и настройки)
 pritunl set app.redirect_server false 
------------------------------
+
 ====================================
 ====================================
 # webmin-mumble-django-pptp на Debian8 (PPTP не советую , лучше pritunl)
@@ -48,11 +55,14 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/in
 -----------------------------
 при установке mumble-django
 ice пароль 123456 (icesecretwrite)
+
 -----------------------------
 mumble-django channel viewer
+
 http://IPADRESS/mumble-django/mumble/1
 -----------------------------
 webmin
+
 https://IPADRESS:10000/
 -----------------------------
 pptp логин и пароль
