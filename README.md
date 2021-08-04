@@ -16,7 +16,7 @@ pritunl set app.redirect_server false
 
 ====================================
 ====================================
-# webmin-mumble-django-pritunl на Debian8
+# webmin-mumble-django на Debian8
 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django.sh && bash ./webmin-mumble-django.sh
 
