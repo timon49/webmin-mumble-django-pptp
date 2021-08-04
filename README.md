@@ -29,6 +29,7 @@ pritunl set app.redirect_server false
 # pritunl на Debian8 в 2021г
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pritunl-debian8.sh && bash ./pritunl-debian8.sh
 
+web pritunl
 https://IPADRESS/
 
 ключ
