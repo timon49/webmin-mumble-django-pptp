@@ -43,3 +43,7 @@ echo -e "\e[93m   отключить редирект      :  pritunl set app.re
 echo -e "\e[0m                                                   "
 echo -e "\e[94m[][][][][][][]======================================[][][][][][][]"\e[0m"
 echo -e "\e[0m                                                   " 
+read -n1 -r -p "          Press Any Key To Show Commands          "
+
+
+
