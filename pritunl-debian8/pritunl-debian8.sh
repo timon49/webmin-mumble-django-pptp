@@ -2,13 +2,12 @@ apt-get update
 apt-get upgrade -y 
 apt-get install sudo -y 
 rm pritunl-debian8.sh
-echo -e ""
+sudo rm pritunl-debian8.sh
 echo -e "\e[0m                                                   "
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
 echo -e "\e[0m                                                   "
-echo -e "\e[36m            начало установки  Pritunl          "                                             " 
-
-
+echo -e "\e[36m            начало установки  Pritunl          "
+echo -e "\e[0m                                                   "
 rm pritunl-debian8.sh
 rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 echo "deb https://repo.pritunl.com/stable/apt buster main" > /etc/apt/sources.list.d/pritunl.list
