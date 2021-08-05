@@ -5,10 +5,12 @@ web pritunl
 https://IPADRESS/
 
 ключ 
+
 pritunl setup-key
 -----------------------------
 
 логин и пароль 
+
 pritunl default-password
 -----------------------------
 
