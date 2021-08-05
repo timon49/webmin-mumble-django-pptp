@@ -1,7 +1,7 @@
 apt-get update 
 apt-get upgrade -y 
 apt-get install sudo -y 
-MYIP=$(wget -qO- ipv4.icanhazip.com);
+
 
 echo -e "\e[0m                                                   " 
 echo -e "\e[36m        AutoScript Pritunl Debian8 by timon49          "
@@ -26,8 +26,10 @@ systemctl enable mongod pritunl
 
 
 clear
-echo -e "\e[0m                                                   "
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo -e ""
+echo -e "\e[94m<><><><><><>======================================<><><><><><>"
+echo -e "\e[0m                                                   "
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
 echo -e "\e[0m                                                   "
 echo -e "\e[95m            настройка pritunl  "
@@ -36,4 +38,6 @@ echo -e "\e[93m   web pritunl             :  https://$MYIP/      "
 echo -e "\e[93m   получить ключ           :  pritunl setup-key"
 echo -e "\e[93m   получить логин и пароль :  pritunl default-password"
 echo -e "\e[93m   отключить редирект      :  pritunl set app.redirect_server false"
+echo -e "\e[0m                                                   "
+echo -e "\e[94m<><><><><><>======================================<><><><><><>\e[0m"
 echo -e "\e[0m                                                   " 
