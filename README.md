@@ -2,7 +2,6 @@
 -----------------------------
 установка
 -----------------------------
-
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pritunl-debian8/pritunl-debian8.sh && bash ./pritunl-debian8.sh
 
 -----------------------------
@@ -30,23 +29,30 @@ pritunl default-password
 pritunl set app.redirect_server false 
 
 -----------------------------
------------------------------
 _____________________________
-+++++++++++++++++++++++++++++
+
 
 # webmin-mumble-django на Debian8
-
+-----------------------------
+установка
+-----------------------------
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/timon49/webmin-mumble-django.sh && bash ./webmin-mumble-django.sh
 
-при установке
+-----------------------------
+при установке 
+
 ice пароль 123456 (icesecretwrite)
 
 -----------------------------
-webmin
+webmin 
+
 https://IPADRESS:10000/
+
 -----------------------------
 mumble-django channel viewer
+
 http://IPADRESS/mumble-django/mumble/1
+
 -----------------------------
 
 
@@ -59,7 +65,8 @@ http://IPADRESS/mumble-django/mumble/1
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/install.sh && bash ./install.sh 
 
 -----------------------------
-при установке mumble-django
+при установке mumble-django 
+
 ice пароль 123456 (icesecretwrite)
 
 -----------------------------
