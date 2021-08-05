@@ -1,13 +1,8 @@
-echo "clear"                                                              >> .bashrc
-echo 'echo -e "\e[0m                                                   "' >> .bashrc
-echo 'echo -e "\e[94m    :::::::::  :::::::::   ::::::::  :::   :::    "' >> .bashrc
-echo 'echo -e "\e[94m    :+:    :+: :+:    :+: :+:    :+: :+:   :+:    "' >> .bashrc
-echo 'echo -e "\e[94m    +:+    +:+ +:+    +:+        +:+  +:+ +:+     "' >> .bashrc
-echo 'echo -e "\e[94m    +#+    +:+ +#++:++#:      +#++:    +#++:      "' >> .bashrc
-echo 'echo -e "\e[94m    +#+    +#+ +#+    +#+        +#+    +#+       "' >> .bashrc
-echo 'echo -e "\e[94m    #+#    #+# #+#    #+# #+#    #+#    #+#       "' >> .bashrc
-echo 'echo -e "\e[94m    #########  ###    ###  ########     ###       "' >> .bashrc
-echo 'echo -e "\e[94m           AutoScriptVPS by  _Dreyannz_           "' >> .bashrc
-echo 'echo -e "\e[0m"'                                                    >> .bashrc
-echo 'echo -e "\e[94m             [accounts/options/server]            "' >> .bashrc
-echo 'echo -e "\e[0m                                                   "' >> .bashrc
+echo -e "\e[92m           AutoScriptVPS by timon49          "
+echo -e "\e[0m                                                   "
+echo -e "\e[93m            web pritunl"
+echo -e "\e[93m   web pritunl             :  https://$MYIP/"
+echo -e "\e[93m   получить ключ           :  pritunl setup-key"
+echo -e "\e[93m   получить логин и пароль :  pritunl default-password"
+echo -e "\e[93m   отключить редирект      :  pritunl set app.redirect_server false"
+echo -e "\e[0m                                                   "
