@@ -3,8 +3,8 @@ apt-get upgrade -y
 apt-get install sudo -y 
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 
-echo -e "\e[91m                                                   "
-echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
+echo -e "\e[0m                                                   " 
+echo -e "\e[36m        AutoScript Pritunl Debian8 by timon49          "
 
 rm pritunl-debian8.sh
 rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
