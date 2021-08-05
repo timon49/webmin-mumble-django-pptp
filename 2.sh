@@ -1,5 +1,5 @@
 
-clear
+
 echo -e "\e[0m                                                   "
 echo -e ""
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
