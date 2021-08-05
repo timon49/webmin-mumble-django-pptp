@@ -4,12 +4,12 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pr
 web pritunl
 https://IPADRESS/
 
-ключ 
+получить ключ 
 
 pritunl setup-key
 -----------------------------
 
-логин и пароль 
+получить логин и пароль 
 
 pritunl default-password
 -----------------------------
