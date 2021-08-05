@@ -10,4 +10,4 @@ echo -e "\e[93m   web pritunl             :  https://$MYIP/      "
 echo -e "\e[93m   получить ключ           :  pritunl setup-key"
 echo -e "\e[93m   получить логин и пароль :  pritunl default-password"
 echo -e "\e[93m   отключить редирект      :  pritunl set app.redirect_server false"
-echo -e "\e[0m 
+echo -e "\e[0m                                                                    "
