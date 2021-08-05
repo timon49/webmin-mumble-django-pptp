@@ -4,13 +4,13 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pr
 web pritunl
 https://IPADRESS/
 
-ключ
-
+ключ 
 pritunl setup-key
+-----------------------------
 
-логин и пароль
-
+логин и пароль 
 pritunl default-password
+-----------------------------
 
 Эта команда отключит прослушивание и редирект у pritunl(вводить после входа и настройки)
 pritunl set app.redirect_server false 
