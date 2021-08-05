@@ -1,5 +1,5 @@
 
-rm 1.sh
+rm 2.sh
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo -e "\e[92m           AutoScriptVPS by timon49          "
 echo -e "\e[0m                                                   "
