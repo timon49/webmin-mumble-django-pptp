@@ -30,6 +30,9 @@ pritunl default-password
 pritunl set app.redirect_server false 
 
 -----------------------------
+-----------------------------
+_____________________________
++++++++++++++++++++++++++++++
 
 # webmin-mumble-django на Debian8
 
