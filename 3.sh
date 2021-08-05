@@ -1,4 +1,5 @@
 clear
+MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo -e ""
 echo -e "\e[94m[][][]======================================[][][]"
 echo -e "\e[0m                                                   "
