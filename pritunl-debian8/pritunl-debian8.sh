@@ -3,7 +3,6 @@ apt-get upgrade -y
 apt-get install sudo -y 
 
 echo -e ""
-echo -e "\e[94m<><><><><><>======================================<><><><><><>"
 echo -e "\e[0m                                                   "
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
 echo -e "\e[0m                                                   "
