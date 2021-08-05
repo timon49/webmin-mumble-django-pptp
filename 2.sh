@@ -3,7 +3,7 @@ rm 2.sh
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
 echo -e "\e[0m                                                   "
-echo -e "\e[95m            admin web"
+echo -e "\e[95m            настройка"
 echo -e "\e[0m                                                   "
 echo -e "\e[93m   web pritunl             :  https://$MYIP/      "
 echo -e "\e[93m   получить ключ           :  pritunl setup-key"
