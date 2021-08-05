@@ -5,9 +5,11 @@ web pritunl
 https://IPADRESS/
 
 ключ
+
 pritunl setup-key
 
 логин и пароль
+
 pritunl default-password
 
 Эта команда отключит прослушивание и редирект у pritunl(вводить после входа и настройки)
