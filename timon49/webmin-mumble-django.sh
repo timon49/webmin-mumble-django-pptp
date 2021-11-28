@@ -66,7 +66,7 @@ cd /root
 wget http://www.webmin.com/jcameron-key.asc 
 apt-key add jcameron-key.asc 
 apt-get update 
-apt-get install webmin -y
+apt-get install webmin --force-yes -y
 
 
 
