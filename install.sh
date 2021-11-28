@@ -23,7 +23,7 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pp
 cd /etc/ppp 
 rm  chap-secrets 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/chap-secrets 
-chmod 600 /etc/ppp/chap-secrets &&a chown root:root /etc/ppp/chap-secrets 
+chmod 600 /etc/ppp/chap-secrets && chown root:root /etc/ppp/chap-secrets 
 /etc/init.d/pptpd restart 
 systemctl enable pptpd.service 
 iptables -A INPUT -p tcp --dport 1723 -j ACCEPT 
