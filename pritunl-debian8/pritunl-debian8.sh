@@ -7,28 +7,24 @@ echo -e "\e[0m                                                   "
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
 echo -e "\e[0m                                                   "
 echo -e "\e[36m            начало установки  Pritunl          "
-echo -e "\e[0m                                                   "
+echo -e "\e[0m    
+"
 rm pritunl-debian8.sh
+
 rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
-echo "deb https://repo.pritunl.com/stable/apt buster main" > /etc/apt/sources.list.d/pritunl.list
-sudo apt-get --assume-yes install gnupg
-echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/4.0 main" > /etc/apt/sources.list.d/mongodb-org-4.0.list 
-sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
+
 
 apt-get install sudo
+
 apt-get update -y
+
 apt-get install nano -y
 
 
+echo "deb https://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" >> /etc/apt/sources.list
 
-sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list << EOF
-deb https://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main
-EOF
+echo "https://repo.pritunl.com/stable/apt buster main" >> /etc/apt/sources.list
 
-
-sudo tee /etc/apt/sources.list.d/pritunl.list << EOF
-deb https://repo.pritunl.com/stable/apt buster main
-EOF
 
 sudo apt-get --assume-yes install gnupg
 
@@ -50,8 +46,6 @@ sudo systemctl enable mongod.service
 
 sudo systemctl start mongod
 
-
-
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 
 
 sudo apt-get install apt-transport-https -y
@@ -67,6 +61,7 @@ sudo dpkg -i --force-all pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 systemctl start mongod pritunl 
 
 systemctl enable mongod pritunl 
+
 
 
 
