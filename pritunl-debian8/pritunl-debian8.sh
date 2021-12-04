@@ -23,7 +23,7 @@ apt-get install nano -y
 
 echo "deb https://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" >> /etc/apt/sources.list
 
-echo "https://repo.pritunl.com/stable/apt buster main" >> /etc/apt/sources.list
+echo "deb https://repo.pritunl.com/stable/apt buster main" >> /etc/apt/sources.list
 
 
 sudo apt-get --assume-yes install gnupg
@@ -38,7 +38,10 @@ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0C49F3730359A1
 
 echo "deb http://repo.mongodb.org/apt/debian jessie/mongodb-org/3.4 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.4.list
 
+apt-get -f install -y
+
 sudo apt-get update
+
 
 sudo apt-get install -y mongodb-org
 
