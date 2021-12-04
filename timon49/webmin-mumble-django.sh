@@ -63,8 +63,11 @@ echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/a
 echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib" > /etc/apt/webminmirror.list 
 
 cd /root 
+apt-get update
 wget http://prdownloads.sourceforge.net/webadmin/webmin_1.983_all.deb
 dpkg --install webmin_1.983_all.deb
+apt-get -f install -y
+
 
 
 
