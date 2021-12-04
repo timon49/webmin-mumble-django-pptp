@@ -13,13 +13,15 @@ rm pritunl-debian8.sh
 
 rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 
+apt-get install sudo
+
 sudo apt-get remove -y mongodb-org gnupg pritunl mongod
 
 sudo apt-get purge -y mongodb-org gnupg pritunl mongod
 
 
 
-apt-get install sudo
+
 
 apt-get update -y
 
