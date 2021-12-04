@@ -63,10 +63,9 @@ echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/a
 echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib" > /etc/apt/webminmirror.list 
 
 cd /root 
-wget http://www.webmin.com/jcameron-key.asc 
-apt-key add jcameron-key.asc 
-apt-get update 
-apt-get install webmin --force-yes -y
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.983_all.deb
+dpkg --install webmin_1.983_all.deb
+
 
 
 
