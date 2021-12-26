@@ -68,6 +68,7 @@ systemctl start mongod pritunl
 
 systemctl enable mongod pritunl
 
+apt-get -f install -y
 
 
 
@@ -78,7 +79,7 @@ MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo -e ""
 echo -e "\e[94m[][][][][][][]======================================[][][][][][][]"
 echo -e "\e[0m                                                   "
-echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49          "
+echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49(ВенА)          "
 echo -e "\e[0m                                                   "
 echo -e "\e[95m            настройка pritunl  "
 echo -e "\e[0m                                                   "
@@ -89,7 +90,7 @@ echo -e "\e[93m   отключить редирект      :  pritunl set app.re
 echo -e "\e[0m                                                   "
 echo -e "\e[94m[][][][][][][]======================================[][][][][][][]"
 echo -e "\e[0m                                                   " 
-read -n1 -r -p "          Press Any Key To Show Commands          "
+read -n1 -r -p "          Специально для rumonas.ru          "
 
 
 
