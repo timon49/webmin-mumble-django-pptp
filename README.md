@@ -2,7 +2,7 @@
 -----------------------------
 установка
 -----------------------------
-wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pritunl-debian8/pritunl-debian8.sh && bash ./pritunl-debian8.sh
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/pritunl-debian8/pritunl-debian8-2022.sh && bash ./pritunl-debian8-2022.sh
 
 -----------------------------
 web pritunl
