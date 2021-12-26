@@ -7,8 +7,10 @@ echo -e "\e[0m                                                   "
 echo -e "\e[92m        AutoScript Pritunl Debian8 by timon49(ВенА)          "
 echo -e "\e[0m                                                   "
 echo -e "\e[36m            начало установки  Pritunl          "
+echo -e "\e[0m                                                   "
+echo -e "\e[56m            Специально для rumonas.ru          "
 echo -e "\e[0m    "
-read -n1 -r -p "          Специально для rumonas.ru          "
+
 rm pritunl-debian8-2022.sh
 
 rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
