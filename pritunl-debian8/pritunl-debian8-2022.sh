@@ -70,7 +70,7 @@ systemctl start mongod pritunl
 
 systemctl enable mongod pritunl
 
-apt-get -f install -y
+
 
 
 
