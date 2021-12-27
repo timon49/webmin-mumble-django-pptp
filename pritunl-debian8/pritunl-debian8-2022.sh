@@ -80,7 +80,7 @@ systemctl enable mongod pritunl
 
 apt-get -f install -y
 
-echo "deb https://repo.pritunl.com/stable/apt buster main" | sudo tee /etc/apt/sources.list.d/pritunl.list
+echo "deb https://repo.pritunl.com/stable/apt stretch main" | sudo tee /etc/apt/sources.list.d/pritunl.list
 
 sudo apt-get --assume-yes install gnupg
 
