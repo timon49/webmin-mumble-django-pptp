@@ -86,6 +86,10 @@ sudo apt-get --assume-yes install gnupg
 
 sudo apt-get update
 
+apt-get -f install -y
+
+sudo apt-get update
+
 sudo apt-get --assume-yes install pritunl
 
 systemctl start mongod pritunl
