@@ -108,6 +108,10 @@ sudo apt-get --assume-yes install pritunl
 
 apt-get -f install -y
 
+wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/mongod.conf
+
+cp mongod.conf /etc
+
 sudo apt-get --assume-yes install pritunl
 
 
