@@ -118,6 +118,26 @@ cp mongod.conf /etc
 sudo apt-get --assume-yes install pritunl
 
 
+rm /etc/apt/sources.list.d/pritunl.list
+
+echo "deb https://repo.pritunl.com/stable/apt buster main" | sudo tee /etc/apt/sources.list.d/pritunl.list
+
+sudo apt-get update
+
+apt-get install pritunl-ndppd
+
+rm /etc/apt/sources.list.d/pritunl.list
+
+sudo dpkg -i --force-all pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
+
+systemctl start mongod pritunl
+
+systemctl enable mongod pritunl
+
+systemctl restart mongod pritunl
+
+
+
 
 
 
@@ -138,6 +158,7 @@ echo -e "\e[93m   web pritunl             :  https://$MYIP/      "
 echo -e "\e[93m   получить ключ           :  pritunl setup-key"
 echo -e "\e[93m   получить логин и пароль :  pritunl default-password"
 echo -e "\e[93m   отключить редирект      :  pritunl set app.redirect_server false"
+echo -e "\e[91m   Для работы в web pritunl ПЕРЕЗАГРУЗИТЕ СЕРВЕР командой: reboot "
 echo -e "\e[0m                                                   "
 echo -e "\e[94m[][][][][][][]======================================[][][][][][][]"
 echo -e "\e[0m                                                   " 
