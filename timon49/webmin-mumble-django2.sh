@@ -16,11 +16,15 @@ apt-get install htop -y
 
 
 
+sudo apt-get update
+sudo apt -y install lsb-release apt-transport-https ca-certificates 
+sudo wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
+echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/php.list
+sudo apt update
+sudo apt-get -y install php7.4
+sudo apt-get install php7.4-{bcmath,bz2,intl,gd,mbstring,mysql,zip}
 
 
-apt-get install php5 -y 
-apt-get update 
-apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-curl php5-gd php5-imagick php5-intl php5-mcrypt -y 
 apt-get install apache2 -y 
 
 cd /etc/apache2
