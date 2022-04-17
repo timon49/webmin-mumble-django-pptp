@@ -33,18 +33,6 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/ph
 sudo service apache2 restart 
 
 
-apt-get install mumble-server mumble-django -y 
-cd /etc 
-rm mumble-server.ini 
-wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/mumble-server.ini 
-sudo service mumble-server restart 
-
-sudo service apache2 restart 
-sudo mumble-django-configure 
-cd /etc/mumble-django 
-rm settings.py 
-wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/settings.py 
-sudo service apache2 restart 
 
 
 
