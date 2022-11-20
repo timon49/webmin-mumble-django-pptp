@@ -65,7 +65,7 @@ cd /root
 apt-get update
 wget http://prdownloads.sourceforge.net/webadmin/webmin_2.000_all.deb
 dpkg --install webmin_2.000_all.deb
-apt-get -f install -y
+apt-get -f install --force-yes -y
 
 
 
