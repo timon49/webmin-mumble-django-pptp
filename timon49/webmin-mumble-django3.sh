@@ -18,10 +18,10 @@ apt-get install htop -y
 
 
 
-apt-get install php5 -y 
+apt-get install php5 --force-yes -y 
 apt-get update 
-apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-curl php5-gd php5-imagick php5-intl php5-mcrypt -y 
-apt-get install apache2 -y 
+apt-get install libapache2-mod-php5 php5-cli php5-memcache php5-memcached php5-curl php5-gd php5-imagick php5-intl php5-mcrypt --force-yes -y 
+apt-get install apache2 --force-yes -y 
 
 cd /etc/apache2
 rm apache2.conf
@@ -33,7 +33,7 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/ph
 sudo service apache2 restart 
 
 
-apt-get install mumble-server mumble-django -y 
+apt-get install mumble-server mumble-django --force-yes -y 
 cd /etc 
 rm mumble-server.ini 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/mumble-server.ini 
@@ -47,10 +47,10 @@ wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/se
 sudo service apache2 restart 
 
 
-sudo apt-get remove --purge mysql* -y 
-apt-get install libaio1 libdbd-mysql-perl libhtml-template-perl libmysqlclient18 mysql-client mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 mysql-server-core-5.5 -y 
+sudo apt-get remove --purge mysql* --force-yes -y 
+apt-get install libaio1 libdbd-mysql-perl libhtml-template-perl libmysqlclient18 mysql-client mysql-client-5.5 mysql-common mysql-server mysql-server-5.5 mysql-server-core-5.5 --force-yes -y 
 
-apt-get install phpmyadmin -y 
+apt-get install phpmyadmin --force-yes -y 
 
 ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf 
 a2enconf phpmyadmin 
@@ -63,8 +63,8 @@ echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge cont
 
 cd /root 
 apt-get update
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.983_all.deb
-dpkg --install webmin_1.983_all.deb
+wget http://prdownloads.sourceforge.net/webadmin/webmin_2.000_all.deb
+dpkg --install webmin_2.000_all.deb
 apt-get -f install -y
 
 
