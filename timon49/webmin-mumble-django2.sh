@@ -56,8 +56,8 @@ echo "deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge cont
 
 cd /root 
 apt-get update
-wget http://prdownloads.sourceforge.net/webadmin/webmin_1.983_all.deb
-dpkg --install webmin_1.983_all.deb
+wget http://prdownloads.sourceforge.net/webadmin/webmin_2.000_all.deb
+dpkg --install webmin_2.000_all.deb
 apt-get -f install -y
 
 
