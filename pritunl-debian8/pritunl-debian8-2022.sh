@@ -17,9 +17,9 @@ rm pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 
 apt-get install sudo
 
-sudo apt-get remove -y mongodb-org gnupg pritunl mongod
+sudo apt-get remove mongodb-org gnupg pritunl mongod --force-yes -y
 
-sudo apt-get purge -y mongodb-org gnupg pritunl mongod
+sudo apt-get purge mongodb-org gnupg pritunl mongod --force-yes -y
 
 
 
@@ -27,11 +27,11 @@ sudo apt-get purge -y mongodb-org gnupg pritunl mongod
 
 apt-get update -y
 
-apt-get install nano -y
+apt-get install nano --force-yes -y
 
-sudo apt-get --assume-yes install gnupg
+sudo apt-get install gnupg --force-yes -y
 
-wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+wget -qO - https://pgp.mongodb.com/server-4.4.asc | sudo apt-key add -
 
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 
@@ -48,7 +48,7 @@ sudo apt-get update
 
 
 
-sudo apt-get install -y mongodb-org
+sudo apt-get install mongodb-org --force-yes -y
 
 sudo systemctl enable mongod.service
 
@@ -56,11 +56,11 @@ sudo systemctl start mongod
 
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 9DA31620334BD75D9DCB49F368818C72E52529D4 
 
-sudo apt-get install apt-transport-https -y
+sudo apt-get install apt-transport-https --force-yes -y
 
-apt-get update -y
+apt-get update --force-yes -y
 
-apt install mc htop nano git curl gnupg -y 
+apt install mc htop nano git curl gnupg --force-yes -y 
 
 wget https://github.com/pritunl/pritunl/releases/download/1.29.2664.67/pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 
@@ -70,7 +70,7 @@ systemctl start mongod pritunl
 
 systemctl enable mongod pritunl
 
-apt-get -f install -y
+apt-get -f install --force-yes -y
 
 sudo dpkg -i --force-all pritunl_1.29.2664.67-0debian1.jessie_amd64.deb
 
@@ -78,17 +78,25 @@ systemctl start mongod pritunl
 
 systemctl enable mongod pritunl
 
-apt-get -f install -y
+apt-get -f install --force-yes -y
 
 echo "deb https://repo.pritunl.com/stable/apt stretch main" | sudo tee /etc/apt/sources.list.d/pritunl.list
 
-sudo apt-get --assume-yes install gnupg
+sudo apt-get install gnupg --force-yes -y
+
+sudo rm /var/lib/apt/lists/lock
 
 sudo apt-get update
 
-apt-get -f install -y
+sudo killall apt-get
+
+apt-get -f install --force-yes -y
+
+sudo rm /var/lib/apt/lists/lock
 
 sudo apt-get update
+
+sudo killall apt-get
 
 sudo apt-get --assume-yes install pritunl
 
@@ -104,18 +112,20 @@ systemctl enable mongod pritunl
 
 sudo apt-get update
 
-sudo apt-get --assume-yes install pritunl
+apt-get -f install
 
-apt-get -f install -y
+sudo apt-get install pritunl --force-yes -y
 
-sudo apt-get --assume-yes install pritunl
+apt-get -f install --force-yes -y
+
+sudo apt-get install pritunl --force-yes -y
 
 
 wget https://raw.githubusercontent.com/timon49/webmin-mumble-django-pptp/main/mongod.conf
 
 cp mongod.conf /etc
 
-sudo apt-get --assume-yes install pritunl
+sudo apt-get install pritunl --force-yes -y
 
 
 rm /etc/apt/sources.list.d/pritunl.list
